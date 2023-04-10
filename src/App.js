@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+
+import { createContext, useState } from 'react';
 import './App.css';
+import UseEffectForCallBack from './components/UseEffectForCallBack';
+import UseEffectHook from './components/UseEffectHook';
+import UseStateHook from './components/UseStateHook';
+import UseContextHook from './components/UseContextHook';
+import UseRefHook from './components/UseRefHook';
+import UseReducerHooks from './components/UseReducerHooks';
+import UseLayoutEffectHook from './components/UseLayoutEffectHook';
+import UseMemoHooks from './components/UseMemoHooks';
+import UseCallBack from './components/UseCallBack';
+import UseCustomHook from './components/UseCustomHook';
+export const VarContext = createContext();
 
 function App() {
+   const [value,setValue] = useState(true)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       
+     {/* <UseStateHook /> */}
+
+{/* 
+     {value? <UseEffectForCallBack />:<UseEffectHook /> }
+      <button onClick={()=>setValue(!value)} >set value</button> */}
+
+{/* 
+
+     <VarContext.Provider value={"akshay"}>  
+     <UseContextHook />
+     </VarContext.Provider> */}
+     
+     {/* <UseRefHook /> */}
+     <UseReducerHooks />
+    {/* <UseLayoutEffectHook /> */}
+    {/* <UseMemoHooks /> */}
+    {/* <UseCallBack /> */}
+    {/* <UseCustomHook /> */}
+
     </div>
   );
 }
