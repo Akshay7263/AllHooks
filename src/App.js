@@ -31,7 +31,7 @@ function App() {
      </VarContext.Provider> */}
      
      {/* <UseRefHook /> */}
-     <UseReducerHooks />
+     <UseReducerHooks />  
     {/* <UseLayoutEffectHook /> */}
     {/* <UseMemoHooks /> */}
     {/* <UseCallBack /> */}
